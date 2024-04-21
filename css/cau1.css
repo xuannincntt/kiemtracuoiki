@@ -3,6 +3,7 @@ body{
     font-size: 13pt;
 }
 #nd{
+    display: none;
     margin:auto;
     width:80%;
     #tieude{
@@ -34,11 +35,8 @@ body{
     }
 }
 #sign{
-    display:none;
     margin:auto;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
-    border-style: solid;
-    border-width: 1px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
     width:40%;
     background-color: white;
     margin-top: 50px;
@@ -67,6 +65,7 @@ body{
             width:97%;
             font-size: 12pt;
             height:35px;
+            outline: none;
         }
         button{
             width:100%;
@@ -75,6 +74,16 @@ body{
             color:white;
             background-color: #d43831;
             font-size: 12pt;
+        }
+        input:focus, input:hover{
+            height:38px;
+            padding-left: 11px;
+        }
+        button:hover, input:focus, input:hover{
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d43831;
+            box-shadow: 0px 0px 2px 0px #d43831;
         }
         #register{
             margin:20px 0px 50px 0px;
