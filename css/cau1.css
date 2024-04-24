@@ -1,9 +1,16 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13pt;
+    width:100%;
+    margin:auto;
+}
+#bg{
+    z-index: -1;
+    position:absolute;
+    width:100%;
+    height:cover;
 }
 #nd{
-    display: none;
     margin:auto;
     width:80%;
     #tieude{
@@ -27,16 +34,43 @@ body{
             h3{
                 margin:0px;
             }
-            a{
-                color:white;
-                text-decoration: none;
-            }
+        }
+        a{
+            color:white;
+            text-decoration: none;
         }
     }
 }
-#sign{
+#lienhe{
+    height:300px;
+    width:35%;
     margin:auto;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    background-color: pink;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    h3{
+        padding:30px 0px 10px 0px;
+    }
+    div{
+        width:80%;
+        margin:auto;
+        text-align: left;
+        padding-left: 30px;
+        #h{
+            padding-top: 30px;
+        }
+    }
+    img{
+        width:40%;
+        float:left;
+        margin-right: 20px;
+        border-radius: 100%;
+    }
+}
+#sign{
+    display:none;
+    margin:auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     width:40%;
     background-color: white;
     margin-top: 50px;
@@ -91,6 +125,101 @@ body{
             height:45px;
             background-color: white;
             color:black;
+        }
+    }
+}
+#tkmoi{
+    display:none;
+    margin:auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width:40%;
+    background-color: white;
+    margin-top: 50px;
+    h3{
+        text-align: center;
+        padding: 50px 0px 20px 0px;
+    }
+    #dangky{
+        width:75%;
+        margin:auto;
+        input{
+            width:97%;
+            font-size: 12pt;
+            height:40px;
+            outline:none;
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+        button{
+            width:100%;
+            border-width: 1px;
+            height:50px;
+            color:white;
+            background-color: #d43831;
+            font-size: 12pt;
+            margin-bottom: 60px;
+        }
+        input:focus, input:hover{
+            height:43px;
+            padding-left: 11px;
+        }
+        button:hover, input:focus, input:hover, select:hover{
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d43831;
+            box-shadow: 0px 0px 2px 0px #d43831;
+        }
+        #online{
+            width:15px;
+            height:15px;
+            display:inline;
+        }
+        #offline{
+            width:15px;
+            height:15px;
+            display:inline;
+        }
+        select{
+            width:100%;
+            height:45px;
+            margin-bottom: 30px;
+            font-size: 12pt;
+            padding-left: 10px;
+            outline:none;
+        }
+    }
+}
+.tieude{
+    position:sticky;
+    z-index: 2;
+    top:0;
+    background-color: white;
+    height:65px;
+    width:100%;
+    margin:auto;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: #d9d9d9;
+    #bao{
+        margin:auto;
+        margin-top: 10px;
+        width:82%;
+        img{
+            padding:5px 0px 0px 0px;
+            float:left;
+            height:34px;
+        }
+        #dk{
+            display:flex;
+            justify-content: flex-end;
+            h4{
+                margin: 0px;
+                padding:10px 0px 10px 20px;
+            }
+            a{
+                color:#676e76;
+                text-decoration: none;
+            }
         }
     }
 }

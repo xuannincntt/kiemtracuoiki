@@ -8,13 +8,26 @@
         <title>Garena Account Center</title>
     </head>
     <body>
+        <div class="tieude">
+            <div id="bao">
+                <a href="#" onclick="ham(3)"><img src="/img/logo.svg"></a>
+                <div id="dk">
+                    <a href="#" onclick="ham(1)"><h4>Đăng nhập</h4></a>
+                    <a href="#" onclick="ham(2)"><h4>Đăng ký</h4></a>
+                </div>
+            </div>
+        </div>
+        <img src="/img/bg.png" id="bg">
         <div id="nd">
             <div id="tieude"><h1>Bài kiểm tra cuối kỳ</h1></div>
             <div id="menu">
-                <div class="it" onclick="ham1()"><a href="#"><h3>Đăng nhập</h3></a></div>
-                <div class="it" onclick="ham1()"><a href="#"><h3>Đăng ký</h3></a></div>
+                <a href="#" onclick="ham(1)"><div class="it"><h3>Đăng nhập</h3></div></a>
+                <a href="#" onclick="ham(2)"><div class="it"><h3>Đăng ký</h3></div></a>
             </div>
-        </div>       
+        </div>
+        <div id="lienhe">
+            <h3>Thông tin sinh viên</h3>
+        </div>
         <div id="sign">
             <h3>Đăng nhập</h3>
             <div id="dangnhap">
@@ -24,8 +37,29 @@
                 <input type="password" placeholder="Mật khẩu">
                 <p id="forgetpassword"><a href="#">Quên mật khẩu?</a></p>
                 <button type="button">Đăng nhập</button>
-                <button type="button" id="register">Tạo tài khoản mới</button>
+                <button type="button" id="register" onclick="ham(2)">Tạo tài khoản mới</button>
             </div>
         </div>
+        <div id="tkmoi">
+            <h3>Đăng ký</h3>
+            <div id="dangky">
+                <input type="text" placeholder="Tên truy cập">
+                <input type="password" placeholder="Mật khẩu">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+                <input type="email" placeholder="Email">
+                <input type="radio" name="ca" id="online" checked><label for="online">Nam</label>
+                <input type="radio" name="ca" id="offline"><label for="offline">Nữ</label>
+                <select name="city" size="1">
+                    <option value="Hà Nội" selected>Hà Nội</option>
+                    <option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+                    <option value="Thanh Hóa">Thanh Hóa</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                    <option value="Cần Thơ">Cần Thơ</option>
+                </select>
+                <button type="button">Đăng Ký Ngay</button>
+            </div>
+        </div>
+        <script src="/js/cau1.js"></script>
     </body>
 </html>
